@@ -10,11 +10,13 @@ import AnhDienThoai from '../assets/img/anh-dien-thoai.webp'
 import AnhDienThoai1 from '../assets/img/anh-dien-thoai-1.webp'
 import AnhMangHinh from '../assets/img/anh-mang-hinh.webp'
 import AnhMayAnh from '../assets/img/anh-may-anh.webp'
+import AnhSPThaoDuoc from '../assets/img/anh-sp-thaoduoc.webp'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import SanPhamCongNghe from '../components/Product-CongNghe'
 import LogoSanPham from '../components/logo'
 import Bt from '../components/nut'
+import TabSP from '../components/tabSP'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -41,7 +43,7 @@ createRoot(document.getElementById('root')!).render(
       </div>
 
       <div className='pl-20 flex justify-between pr-20 pt-30'>
-        <div className='w-3/12 mt-10'>
+        <div className='w-80 mt-10'>
           <span className='text-xl text-gray-400 font-medium'>
             TRENDING
           </span>
@@ -143,22 +145,41 @@ createRoot(document.getElementById('root')!).render(
       <div className='h-full w-9/12 pt-3 pb-3 flex'>
         <div className='h-full'>
           <div className='h-1/2'>
-            <img className='h-full pb-2' src= {AnhDienThoai1} alt="" />
+            <img className='h-full pb-2' src={AnhDienThoai1} alt="" />
           </div>
 
           <div className='h-1/2'>
-            <img className='h-full pt-2' src= {AnhDienThoai1} alt="" />
+            <img className='h-full pt-2' src={AnhDienThoai1} alt="" />
           </div>
         </div>
 
         <div className='h-full'>
-          <img className='h-full pl-5' src= {AnhDienThoai1} alt="" />  
-        </div>  
+          <img className='h-full pl-5' src={AnhDienThoai1} alt="" />
+        </div>
       </div>
 
 
     </div>
     {/* end content 5 */}
+
+    {/* content 6 */}
+    <div>
+      <div className='text-3xl font-medium text-center mt-10'>
+        <span>
+          Best price
+        </span>
+      </div>
+      <div className='flex justify-between pr-45 pl-45 mt-10 mb-10'>
+        <TabSP imgSP={AnhSPThaoDuoc} gia="300.000 đ" tenSP="Kem Dưỡng" />
+        <TabSP imgSP={AnhSPThaoDuoc} gia="300.000 đ" tenSP="Kem Dưỡng" />
+        <TabSP imgSP={AnhSPThaoDuoc} gia="300.000 đ" tenSP="Kem Dưỡng" />
+        <TabSP imgSP={AnhSPThaoDuoc} gia="300.000 đ" tenSP="Kem Dưỡng" />
+      </div>
+    </div>
+
+    {/* end content 6 */}
+
+
     <Footer />
   </StrictMode>,
 )
