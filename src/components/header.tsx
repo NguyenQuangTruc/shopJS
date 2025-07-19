@@ -1,5 +1,6 @@
 import './component.css'
 
+
 export default function (props: any) {
     return (
         <div className="w-full h-25 pl-45 pr-45 pt-10 flex justify-between">
@@ -16,7 +17,7 @@ export default function (props: any) {
                     </a>
                 </div>
                 <div className='text-gray-500 font-medium ml-3 mr-3'>
-                    <a className={`${props.targetShop}`} href="">
+                    <a className={`${props.targetShop}`} href='../../Shop.html'>
                         Shop Now
                     </a>
                 </div>

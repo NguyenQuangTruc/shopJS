@@ -1,1 +1,8 @@
 @import 'tailwindcss';
+
+.bg-img {
+    
+    background-image: url('https://lh3.googleusercontent.com/z5Ub5A9TeLzgptfXdbvjNpw_BboqGouiQWzdQ44ecK3wputcjKcUw0pUYY1Hn4_hMezsGTfCLEeIltZ-JL9QEAXtlhcOFZUl2g=w200');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
